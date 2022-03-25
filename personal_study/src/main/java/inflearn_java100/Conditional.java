@@ -1,7 +1,9 @@
-//자바 기초 공부 - 인프런 자바 100제_조건문(22.03.24)
+//자바 기초 공부 - 인프런 자바 100제_조건문(22.03.25)
 package inflearn_study;
 
-public class conditional {
+import java.util.Scanner;
+
+public class Conditional {
     public static void main(String[] args) {
         int kor=40, eng=20, math=100;
         
@@ -35,9 +37,39 @@ public class conditional {
         }
 
         //switch 조건문
-        int age =10;
+        Scanner scan = new Scanner(System.in);
+        int age = scan.nextInt();
+
+        // 사용자 입력 예외처리
+        if(age>10 && age<20){
+            age=10;
+        }
+        else if (age>20 && age<30){
+            System.out.println("20이라고 다시 연령대를 입력해주세요. 프로그램을 종료합니다.");
+            //System.exit(0);
+
+        }
+        else if (age>30 && age<40) {
+            System.out.println("30이라고 다시 연령대를 입력해주세요. 프로그램을 종료합니다.");
+            //System.exit(0);
+        }
+        else if (age>40 && age<50) {
+            System.out.println("40이라고 다시 연령대를 입력해주세요. 프로그램을 종료합니다.");
+            //System.exit(0);
+        }
+        else if (age>50 && age<60) {
+            System.out.println("50이라고 다시 연령대를 입력해주세요. 프로그램을 종료합니다.");
+            //System.exit(0);
+        }
+        else {
+            if (age<10) {
+                System.out.println("최소 10 이상만 입력해주세요. 프로그램을 종료합니다.");
+                //System.exit(0);
+            }
+        }
+
         //변수 조건은 정수형이어야함. long타입은 불가 char타입은 가능.
-        //break와 default를 뺴먹지 말아야함.
+        //break와 default(case에 해당되지 않는 나머지)를 뺴먹지 말아야함.
 
         switch (age){
             case 10:
@@ -55,10 +87,18 @@ public class conditional {
             case 50:
                 System.out.println(age+"대 입니다. 재취업 코너는 e구역입니다.");
                 break;
+            default:
+                System.out.println("60대 이상입니다. 건강관련 코너는 f구역입니다.");
 
         }
-            
+    //삼항 연산자
+        int hour = 10;
+        // 10보다 작거나 같으면 100을 곱하시오
+        int test = hour<=10 ? hour*100:hour;
+        System.out.println(test);
 
+        // 12보다 작으면 오전, 크면 오후
+        String str = hour<12 ? "오전":"오후";
+        System.out.println(str);
     }
-
 }

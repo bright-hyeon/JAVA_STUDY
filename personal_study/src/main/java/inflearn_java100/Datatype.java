@@ -1,10 +1,9 @@
 //자바 기초 공부 - 인프런 자바 100제_데이터 타입(22.03.24)
 package inflearn_study;
 
-import java.sql.SQLOutput;
 
-public class DataType {
-    public static void main(String[] args) {
+public class Datatype {
+public static void main(String[] args) {
         //byte, short, int, long, char
         //BYTES 메소드는 바이트 크기를 계산해줌
         System.out.println(Byte.BYTES);
@@ -51,5 +50,5 @@ public class DataType {
         System.out.println(stra.length());
 
 
-    }
-}
+        }
+        }
