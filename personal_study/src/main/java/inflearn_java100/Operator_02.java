@@ -1,7 +1,7 @@
 //자바 기초 공부 - 인프런 자바 100제_연산자(22.03.24)
 package inflearn_study;
 
-public class Operator {
+public class Operator_02 {
     public static void main(String[] args) {
         int a=0, b=100;
 

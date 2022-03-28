@@ -2,7 +2,7 @@
 package inflearn_java100;
 
 //자바의 반복문 -> 4가지(for, while, do~while, 향상된 for문)
-public class Loop {
+public class Loop_04 {
     public static void main(String[] args) {
         //for문 for(변수 초기식; 조건식; 증감식;)
         for(int i=0;i<10;i++) {

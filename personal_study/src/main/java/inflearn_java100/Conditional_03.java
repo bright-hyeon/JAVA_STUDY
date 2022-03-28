@@ -3,7 +3,7 @@ package inflearn_study;
 
 import java.util.Scanner;
 
-public class Conditional {
+public class Conditional_03 {
     public static void main(String[] args) {
         int kor=40, eng=20, math=100;
         
@@ -38,6 +38,7 @@ public class Conditional {
 
         //switch 조건문
         Scanner scan = new Scanner(System.in);
+        System.out.print("당신의 나이를 입력해주세요 : ");
         int age = scan.nextInt();
 
         // 사용자 입력 예외처리
