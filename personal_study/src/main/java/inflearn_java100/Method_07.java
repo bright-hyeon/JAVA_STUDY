@@ -8,8 +8,10 @@
  */
 package inflearn_java100;
 
+import java.util.Locale;
+
 public class Method_07 {
-    /* 반환값과 인자 모두 없는 경우
+    /* [반환값과 인자 모두 없는 경우]
     public static void showMenu(){
         //반환값이 없는경우 void 활용
         System.out.println("showMenu()메서드가 호출되었습니다.");
@@ -20,7 +22,7 @@ public class Method_07 {
     }
     */
 
-    /* 반환값이 없고 인자가 있는 메소드
+    /* [반환값이 없고 인자가 있는 메소드]
     public static void plusMethod(int a,int b){
         System.out.printf("인자로 넘겨받은 2개의 값은 %d과 %d입니다.",a,b);
         int rst = a+b;
@@ -33,7 +35,7 @@ public class Method_07 {
     }
      */
 
-    /*반환값이 있고 인자가 없는 메소드
+    /*[반환값이 있고 인자가 없는 메소드]
     public static int returnMethod(){
         int ret =100;
         ret *=100 ;
@@ -47,9 +49,16 @@ public class Method_07 {
     }
      */
 
-    //인자, 반환값 모두 있는 경우
-    public static void main(String[] args) {
+    //[인자, 반환값 모두 있는 경우]
+    public static String capitalMethod(String str){
+        String ret =str.toUpperCase();
+        return ret;
+    }
 
+    public static void main(String[] args) {
+        String rst;
+        rst = capitalMethod("welcome to seoul");
+        System.out.println("입력한 소문자의 대문자는 = " +rst);
     }
 
 
