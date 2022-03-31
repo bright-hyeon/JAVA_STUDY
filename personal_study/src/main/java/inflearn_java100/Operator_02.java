@@ -10,7 +10,7 @@ public class Operator_02 {
         a+=1;
         System.out.println(a);
 
-        b++; //하나 증가
+        b++; //하나 증가.
         System.out.println(b);
 
         //수치 소수점 연산자

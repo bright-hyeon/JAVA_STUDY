@@ -1,4 +1,4 @@
-//자바 기초 공부 - 인프런 자바 100제_조건문(22.03.25)
+//자바 기초 공부 - 인프런 자바 100제_조건문(22.03.25).
 package inflearn_study;
 
 import java.util.Scanner;

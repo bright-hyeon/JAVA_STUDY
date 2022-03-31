@@ -13,7 +13,7 @@ import java.util.Locale;
 public class Method_07 {
     /* [반환값과 인자 모두 없는 경우]
     public static void showMenu(){
-        //반환값이 없는경우 void 활용
+        //반환값이 없는경우 void 활용.
         System.out.println("showMenu()메서드가 호출되었습니다.");
         //메서드는 main을 활용해 호출하지 않으면 실행되지 않음.
     }
